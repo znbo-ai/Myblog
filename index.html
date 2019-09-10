@@ -16,7 +16,6 @@
 	</head>
 
 	<body>
-
 		<!--导航栏-->
 		<nav class="nav navbar-inverse navbar-fixed-top">
 			<div class="navbar-header col-sm-2 col-sm-push-1">
@@ -68,9 +67,10 @@
 								<div class="form-group">
 									<input type="text" class="form-control" placeholder="请输入关键词" />
 									<button type="button" class="btn btn-default">
-   						<span class="glyphicon glyphicon-search"></span></button>
+   							<span class="glyphicon glyphicon-search"></span></button>
 								</div>
 							</form>
+							
 						</div>
 					</div>
 				</div>
@@ -176,12 +176,13 @@
 				</div>
 			</div>
 		</div>
-		<!--顶部屏幕-->
-
 		<div id="myTabContent" class="tab-content">
 			<!--我的博客-->
-			<div class="tab-pane fade " id="myblog">
-				<p>我的博客</p>
+			<div class="tab-pane fade " id="myblog" style="margin: 55px 0px 0px 0px;">
+				<div style="width: 100%; height: 800px; padding: 200px;">
+					<h1 align="center">小编正在努力开发中,敬请期待...</h1>
+				</div>
+
 			</div>
 			<!--主页-->
 			<div class="tab-pane fade in active" id="home">
@@ -245,21 +246,141 @@
 						<p>非常乐意和大家一起交流</p>
 					</div>
 				</div>
-				<p>等待开发...</p>
+
+				<div class="panel-group" id="accordion">
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h2 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+									HTML技术
+								</a>
+							</h2>
+							<h4><span class="label-primary" style="color: white;">简单</span>
+								<span class="label-warning" style="color: white;">易上手</span>
+								<span class="label-danger" style="color: white;">入门</span>
+							</h4>
+						</div>
+						<div class="panel-collapse collapse in" id="collapseOne">
+							<div class="panel-body">
+								<h5>起步</h5>
+								<p>超文本标记语言(Hyper Text Markup Language)，标准通用标记语言下的一个应用。HTML 不是一种编程语言，而是一种标记语言 (markup language)，是网页制作所必备的。“超文本”就是指页面内可以包含图片、链接，甚至音乐、程序等非文字元素。超文本标记语言(或超文本标签语言)的结构包括“头”部分和“主体”部分，其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。</p>
+								<h5>入门</h5>
+								<p>HTML5是Web中核心语言HTML的规范，用户使用任何手段进行网页浏览时看到的内容原本都是HTML格式的，在浏览器中通过一些技术处理将其转换成为了可识别的信息。HTML5在从前HTML4.01的基础上进行了一定的改进，虽然在技术人员在开发过程中可能不会将这些新技术投入应用，但是对于该种技术的新特性网站开发技术人员是必须要有所了解的。</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h2 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+									Bootstrap教程
+								</a>
+							</h2>
+							<h4><span class="label-primary" style="color: white;">简单</span>
+								<span class="label-warning" style="color: white;">易上手</span>
+								<span class="label-danger" style="color: white;">入门</span>
+							</h4>
+						</div>
+						<div class="panel-collapse collapse in" id="collapseTwo">
+							<div class="panel-body">
+								<h5>基本结构</h5>
+								<p>Bootstrap 提供了一个带有网格系统、链接样式、背景的基本结构。这将在Bootstrap 基本结构部分详细讲解。</p>
+								<h5>CSS</h5>
+								<p>Bootstrap 自带以下特性：全局的 CSS设置、定义基本的 HTML 元素样式、可扩展的 class，以及一个先进的网格系统。这将在Bootstrap CSS部分详细讲解。</p>
+								<h5>组件</h5>
+								<p>Bootstrap 包含了十几个可重用的组件，用于创建图像、下拉菜单、导航、警告框、弹出框等等。这将在布局组件部分详细讲解。</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">
+							<h2 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+									jQuery教程
+								</a>
+							</h2>
+							<h4><span class="label-primary" style="color: white;">简单</span>
+								<span class="label-warning" style="color: white;">易上手</span>
+								<span class="label-danger" style="color: white;">入门</span>
+							</h4>
+						</div>
+						<div class="panel-collapse collapse in" id="collapseThree">
+							<div class="panel-body">
+								<h5>起步</h5>
+								<p>超文本标记语言(Hyper Text Markup Language)，标准通用标记语言下的一个应用。HTML 不是一种编程语言，而是一种标记语言 (markup language)，是网页制作所必备的。“超文本”就是指页面内可以包含图片、链接，甚至音乐、程序等非文字元素。超文本标记语言(或超文本标签语言)的结构包括“头”部分和“主体”部分，其中“头”部提供关于网页的信息，“主体”部分提供网页的具体内容。</p>
+								<h5>入门</h5>
+								<p>HTML5是Web中核心语言HTML的规范，用户使用任何手段进行网页浏览时看到的内容原本都是HTML格式的，在浏览器中通过一些技术处理将其转换成为了可识别的信息。HTML5在从前HTML4.01的基础上进行了一定的改进，虽然在技术人员在开发过程中可能不会将这些新技术投入应用，但是对于该种技术的新特性网站开发技术人员是必须要有所了解的。</p>
+							</div>
+						</div>
+					</div>
+					<div class="panel panel-primary	">
+						<div class="panel-heading">
+							<h2 class="panel-title">
+								<a data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
+									Javascript教程
+								</a>
+							</h2>
+							<h4><span class="label-primary" style="color: white;">简单</span>
+								<span class="label-warning" style="color: white;">易上手</span>
+								<span class="label-danger" style="color: white;">入门</span>
+							</h4>
+						</div>
+						<div class="panel-collapse collapse in" id="collapseFour">
+							<div class="panel-body">
+								<h5>基本结构</h5>
+								<p>Bootstrap 提供了一个带有网格系统、链接样式、背景的基本结构。这将在Bootstrap 基本结构部分详细讲解。</p>
+								<h5>CSS</h5>
+								<p>Bootstrap 自带以下特性：全局的 CSS设置、定义基本的 HTML 元素样式、可扩展的 class，以及一个先进的网格系统。这将在Bootstrap CSS部分详细讲解。</p>
+								<h5>组件</h5>
+								<p>Bootstrap 包含了十几个可重用的组件，用于创建图像、下拉菜单、导航、警告框、弹出框等等。这将在布局组件部分详细讲解。</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<ul class="pagination">
+					<li>
+						<a href="#">&laquo;</a>
+					</li>
+					<li>
+						<a href="#">&lt;</a>
+					</li>
+					<li class="active">
+						<a href="#">1</a>
+					</li>
+					<li>
+						<a href="#">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+					<li>
+						<a href="#">4</a>
+					</li>
+					<li>
+						<a href="#">5</a>
+					</li>
+					<li>
+						<a href="#">&gt;</a>
+					</li>
+					<li>
+						<a href="#">&raquo;</a>
+					</li>
+				</ul>
 			</div>
 			<div class="tab-pane fade" id="album">
 				<div class="jumbotron" style="margin: 50px 0px 0px 0px;">
 					<div class="container">
 						<h1 align="center"><span class="label-primary">谁给你的勇气来看我的相册</span></h1>
-						<p align="center"><span class="label-success">既然来了就给你看看我的盛世美颜!</span></p>
+						<p align="center"><span class="label-success">既然来了就给你看看我们洛阳的美景!</span></p>
 					</div>
 				</div>
 				<div class="row">
-					<div class="col-sm-6 col-md-3" >
-						<div href="#" class="thumbnail" >
-							<img src="image/1.jfif" />
+					<div class="col-sm-6 col-md-3">
+						<div href="#" class="thumbnail">
+						<img src="image/1.jpg" />
 							<div class="caption text-center">
-								<h3>2019摄影作品</h3>
+								<h3>灵山</h3>
 								<p>第一名</p>
 								<p>
 									<button type="button" class="btn btn-default">查看</button>
@@ -268,11 +389,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3" >
-						<div href="#" class="thumbnail" >
-							<img src="image/3.jfif" />
+					<div class="col-sm-6 col-md-3">
+						<div href="#" class="thumbnail">
+							<img src="image/2.jpg" />
 							<div class="caption text-center">
-								<h3>2019摄影作品</h3>
+								<h3>白马寺</h3>
 								<p>第一名</p>
 								<p>
 									<button type="button" class="btn btn-default">查看</button>
@@ -281,11 +402,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3" >
-						<div href="#" class="thumbnail" >
-							<img src="image/2.jfif" />
+					<div class="col-sm-6 col-md-3">
+						<div href="#" class="thumbnail">
+							<img src="image/3.jpg" />
 							<div class="caption text-center">
-								<h3>2019摄影作品</h3>
+								<h3>丽景门</h3>
 								<p>第一名</p>
 								<p>
 									<button type="button" class="btn btn-default">查看</button>
@@ -294,11 +415,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3" >
-						<div href="#" class="thumbnail" >
-							<img  src="image/4.png" />
+					<div class="col-sm-6 col-md-3">
+						<div href="#" class="thumbnail">
+							<img src="image/4.jpg" />
 							<div class="caption text-center">
-								<h3>2019摄影作品</h3>
+								<h3>白云山</h3>
 								<p>第一名</p>
 								<p>
 									<button type="button" class="btn btn-default">查看</button>
@@ -307,11 +428,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3" >
-						<div href="#" class="thumbnail" >
+					<div class="col-sm-6 col-md-3">
+						<div href="#" class="thumbnail">
 							<img src="image/5.jpg" />
 							<div class="caption text-center">
-								<h3>2019摄影作品</h3>
+								<h3>明堂</h3>
 								<p>第一名</p>
 								<p>
 									<button type="button" class="btn btn-default">查看</button>
@@ -320,11 +441,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3" >
-						<div href="#" class="thumbnail" >
+					<div class="col-sm-6 col-md-3">
+						<div href="#" class="thumbnail">
 							<img src="image/6.jpg" />
 							<div class="caption text-center">
-								<h3>2019摄影作品</h3>
+								<h3>老君山</h3>
 								<p>第一名</p>
 								<p>
 									<button type="button" class="btn btn-default">查看</button>
@@ -333,11 +454,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3" >
-						<div href="#" class="thumbnail" >
-							<img  src="image/7.jpg" />
+					<div class="col-sm-6 col-md-3">
+						<div href="#" class="thumbnail">
+							<img src="image/7.jpg" />
 							<div class="caption text-center">
-								<h3>2019摄影作品</h3>
+								<h3>龙门石窟</h3>
 								<p>第一名</p>
 								<p>
 									<button type="button" class="btn btn-default">查看</button>
@@ -346,11 +467,11 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-sm-6 col-md-3" >
+					<div class="col-sm-6 col-md-3">
 						<div href="#" class="thumbnail">
 							<img src="image/8.jpg" />
 							<div class="caption text-center">
-								<h3>2019摄影作品</h3>
+								<h3>明堂夜景</h3>
 								<p>第一名</p>
 								<p>
 									<button type="button" class="btn btn-default">查看</button>
@@ -360,10 +481,40 @@
 						</div>
 					</div>
 				</div>
+				<ul class="pagination">
+					<li>
+						<a href="#">&laquo;</a>
+					</li>
+					<li>
+						<a href="#">&lt;</a>
+					</li>
+					<li class="active">
+						<a href="#">1</a>
+					</li>
+					<li>
+						<a href="#">2</a>
+					</li>
+					<li>
+						<a href="#">3</a>
+					</li>
+					<li>
+						<a href="#">4</a>
+					</li>
+					<li>
+						<a href="#">5</a>
+					</li>
+					<li>
+						<a href="#">&gt;</a>
+					</li>
+					<li>
+						<a href="#">&raquo;</a>
+					</li>
+				</ul>
 			</div>
-
-			<div class="tab-pane fade" id="play">
-				<p>等待开发...</p>
+			<div class="tab-pane fade" id="play" style="margin: 55px 0px 0px 0px;">
+				<div style="width: 100%; height: 800px; padding: 200px;">
+					<h1 align="center">小编正在努力开发中,敬请期待...</h1>
+				</div>
 			</div>
 		</div>
 		<!--底部屏幕-->
